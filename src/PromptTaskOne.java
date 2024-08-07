@@ -39,28 +39,24 @@
 //     }
 // }
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class PromptTaskOne {
     public static void main(String[] args) {
-        // Scanner notScanner = new Scanner(System.in);
+        Scanner notScanner = new Scanner(System.in);
 
-        // System.out.println("Write a message:");     
+        System.out.println("Write a message:");     
 
-        // String promptMessage = notScanner.nextLine();
+        String promptMessage = notScanner.nextLine();
 
-        // System.out.println(promptMessage);
+        System.out.println("You Wrote this text: " + promptMessage);
 
-        // notScanner.close();
+        notScanner.close();
 
-        // String number = "higger";
+        // String start = "My name is ";
+        // String end = "James Bond!";
 
-        // System.out.println(number + "... wassssssssssssssssuuuuuuuuuuuuuuuuuuuup");
-
-        String start = "My name is ";
-        String end = "James Bond!";
-
-        System.out.println(start + "Bond, " + end);
+        // System.out.println(start + "Bond, " + end);
     }
 }
 
