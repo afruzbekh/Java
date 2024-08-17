@@ -97,17 +97,67 @@
 // }
 // }
 
+import java.util.Scanner;
+
 public class DataTypes {
-
     public static void main(String[] args) {
-        String text = "contains text";
-        int wholeNumber = 123;
-        double floatingPoint = 3.141592653;
-        boolean trueOrFalse = true;
+        // String text = "contains text";
+        // int wholeNumber = 123;
+        // double floatingPoint = 3.141592653;
+        // boolean trueOrFalse = true;
 
-        System.out.println("Text variable: " + text);
-        System.out.println("Integer variable: " + wholeNumber);
-        System.out.println("Floating-point variable: " + floatingPoint);
-        System.out.println("Boolean: " + trueOrFalse);
+        // System.out.println("Text variable: " + text);
+        // System.out.println("Integer variable: " + wholeNumber);
+        // System.out.println("Floating-point variable: " + floatingPoint);
+        // System.out.println("Boolean: " + trueOrFalse);
+
+        // int chickenWeight = 9000;
+        // double BaconWeight = 0.1;
+        // String tractotQuantity = "Zetor";
+
+        // System.out.println("Chicken: " + chickenWeight);
+        // System.out.println("Bacon (kg): " + BaconWeight);
+        // System.out.println("Tractor: " + tractotQuantity);
+
+        // System.out.println("and finally, a summary:");
+
+        // System.out.println(chickenWeight);
+        // System.out.println(BaconWeight);
+        // System.out.println(tractotQuantity);
+
+        // int value = 10;
+        // System.out.println(value);
+        // value = 4;
+        // System.out.println(value);
+
+        // int number = 123;
+        // System.out.println("The value of the variable is " + number);
+
+        // number = 42;
+        // System.out.println("The value of the variable is " + number);
+
+        // double pi = 3.14;
+        // double radius = 22.0;
+        // double surfaceArea = pi * radius * radius;
+
+        // System.out.println(surfaceArea);
+
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("Give a number:  ");
+        // String text = scanner.nextLine();
+        // System.out.println("You gave the number " + text);
+
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("Write a value ");
+        // double value = Integer.valueOf(scanner.nextLine());
+        // System.out.println("You wrote " + value);
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Write a boolean ");
+        boolean value = Boolean.valueOf(scanner.nextLine());
+        System.out.println("You wrote " + value);
     }
 }
