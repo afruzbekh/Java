@@ -96,10 +96,10 @@
 // System.out.println("Once upon a time there was " + characterName + ", who was a " + characterJob + ". On the way to work, " + characterName + " reflected on life. Perhaps " + characterName + " will not be a " + characterJob + " forever.");
 // }
 // }
-
 import java.util.Scanner;
 
 public class DataTypes {
+
     public static void main(String[] args) {
         // String text = "contains text";
         // int wholeNumber = 123;
@@ -110,54 +110,68 @@ public class DataTypes {
         // System.out.println("Integer variable: " + wholeNumber);
         // System.out.println("Floating-point variable: " + floatingPoint);
         // System.out.println("Boolean: " + trueOrFalse);
-
         // int chickenWeight = 9000;
         // double BaconWeight = 0.1;
         // String tractotQuantity = "Zetor";
-
         // System.out.println("Chicken: " + chickenWeight);
         // System.out.println("Bacon (kg): " + BaconWeight);
         // System.out.println("Tractor: " + tractotQuantity);
-
         // System.out.println("and finally, a summary:");
-
         // System.out.println(chickenWeight);
         // System.out.println(BaconWeight);
         // System.out.println(tractotQuantity);
-
         // int value = 10;
         // System.out.println(value);
         // value = 4;
         // System.out.println(value);
-
         // int number = 123;
         // System.out.println("The value of the variable is " + number);
-
         // number = 42;
         // System.out.println("The value of the variable is " + number);
-
         // double pi = 3.14;
         // double radius = 22.0;
         // double surfaceArea = pi * radius * radius;
-
         // System.out.println(surfaceArea);
-
         // Scanner scanner = new Scanner(System.in);
-
         // System.out.println("Give a number:  ");
         // String text = scanner.nextLine();
         // System.out.println("You gave the number " + text);
-
         // Scanner scanner = new Scanner(System.in);
-
         // System.out.println("Write a value ");
         // double value = Integer.valueOf(scanner.nextLine());
         // System.out.println("You wrote " + value);
 
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("Write a boolean ");
+        // boolean value = Boolean.valueOf(scanner.nextLine());
+        // System.out.println("You wrote " + value);
+
+        // Scanner scanner = new Scanner(System.in);
+
+        // System.out.println("------------ Write something: ----------");
+        // boolean value = Boolean.valueOf(scanner.nextLine());
+        // System.out.println(value);
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Write a boolean ");
-        boolean value = Boolean.valueOf(scanner.nextLine());
-        System.out.println("You wrote " + value);
+        System.out.println("----------- Give a string: -------------");
+        String valueString = String.valueOf(scanner.nextLine());
+        
+        System.out.println("----------- Give an integer: -------------");
+        int valueInt = Integer.valueOf(scanner.nextLine());
+        
+        System.out.println("----------- Give a double: -------------");
+        double valueDouble = Double.valueOf(scanner.nextLine());
+        
+        System.out.println("----------- Give a boolean: -------------");
+        boolean valueBoolean = Boolean.valueOf(scanner.nextLine());
+        
+        System.out.println(valueString);
+        System.out.println(valueInt);
+        System.out.println(valueDouble);
+        System.out.println(valueBoolean);
+
+        scanner.close();
     }
 }
