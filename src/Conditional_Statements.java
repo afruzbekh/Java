@@ -236,12 +236,12 @@
 // }
 // }
 
-
 import java.util.Scanner;
 
 public class Conditional_Statements {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
 
         // System.out.println("wassup niggas");
         // if (true) {
@@ -262,34 +262,110 @@ public class Conditional_Statements {
         // int number = 5500;
 
         // if (number != 0) {
-        //     System.out.println("The number is not equal to 0");
+        // System.out.println("The number is not equal to 0");
         // }
 
         // if (number >= 1000) {
-        //     System.out.println("The number is at least 1000");
+        // System.out.println("The number is at least 1000");
         // }
 
         // System.out.println("Give a number: ");
         // int exactYear = Integer.valueOf(scanner.nextLine());
         // if (exactYear <= 2015) {
-        //     System.out.println("Ancient history!");
+        // System.out.println("Ancient history!");
         // }
 
         // int number = 6;
 
         // if (number > 5) {
-        //     System.out.println("Your number is greater than five!");
+        // System.out.println("Your number is greater than five!");
         // }else {
-        //     System.out.println("Your number is five or less!");
+        // System.out.println("Your number is five or less!");
         // }
 
-        System.out.println("Give a number: ");
-        int PositiveNegative = Integer.valueOf(scanner.nextLine());
-        if (PositiveNegative > 0) {
-            System.out.println("The number is positive.");
+        // System.out.println("How old are you?");
+        // int PositiveNegative = Integer.valueOf(scanner.nextLine());
+        // if (PositiveNegative >= 18) {
+        // System.out.println("You are an adult");
+        // }else {
+        // System.out.println("You are not an adult");
+        // }
+
+        // int number = 3;
+
+        // if (number == 1) {
+        // System.out.println("The number is one");
+        // } else if (number == 2) {
+        // System.out.println("The given number is two");
+        // } else if (number == 3) {
+        // System.out.println("The number must be three!");
+        // } else {
+        // System.out.println("Something else!");
+        // }
+
+        // System.out.println("Give the first number:");
+        // int firstNumber = Integer.valueOf(scanner.nextLine());
+
+        // System.out.println("Give the second number:");
+        // int secondNumber = Integer.valueOf(scanner.nextLine());
+
+        // if(firstNumber > secondNumber) {
+        // System.out.println("Greater number is: " + firstNumber);
+        // }else if (secondNumber > firstNumber) {
+        // System.out.println("Greater number is: " + secondNumber);
+        // }else {
+        // System.out.println("The numbers are equal!");
+        // }
+
+        // System.out.print("Enter the total points earned: ");
+        // int points = scanner.nextInt();
+
+        // String grade;
+
+        // if (points < 0) {
+        // grade = "impossible!";
+        // } else if (points < 50) {
+        // grade = "failed";
+        // } else if (points < 60) {
+        // grade = "1";
+        // } else if (points < 70) {
+        // grade = "2";
+        // } else if (points < 80) {
+        // grade = "3";
+        // } else if (points < 90) {
+        // grade = "4";
+        // } else if (points <= 100) {
+        // grade = "5";
+        // } else {
+        // grade = "incredible!";
+        // }
+
+        // System.out.println("Your grade is: " + grade);
+
+        // System.out.print("Give a number: ");
+        // int number = scanner.nextInt();
+
+        // if (number % 2 == 0) {
+        // System.out.println("Number " + number + " is even.");
+        // } else {
+        // System.out.println("Number " + number + " is odd.");}
+
+        // System.out.println("Enter a string");
+        // String input = reader.nextLine();
+
+        // if (input.equals("a string")) {
+        //     System.out.println("Great! You read the instructions correctly.");
+        // } else {
+        //     System.out.println("Missed the mark!");
+        // }
+
+        System.out.println("Password?");
+        String passwordInput = reader.nextLine();
+
+        if (passwordInput.equals("Caput Draconis")) {
+            System.out.println("Welcome back, Boss!");
         }else {
-            System.out.println("The number is negative.");
+            System.out.println("Get the fuck out of here!!");
         }
     }
 }
-
