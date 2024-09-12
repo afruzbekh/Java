@@ -354,18 +354,46 @@ public class Conditional_Statements {
         // String input = reader.nextLine();
 
         // if (input.equals("a string")) {
-        //     System.out.println("Great! You read the instructions correctly.");
+        // System.out.println("Great! You read the instructions correctly.");
         // } else {
-        //     System.out.println("Missed the mark!");
+        // System.out.println("Missed the mark!");
         // }
 
-        System.out.println("Password?");
-        String passwordInput = reader.nextLine();
+        // System.out.println("Password?");
+        // String passwordInput = reader.nextLine();
 
-        if (passwordInput.equals("Caput Draconis")) {
-            System.out.println("Welcome back, Boss!");
-        }else {
-            System.out.println("Get the fuck out of here!!");
+        // if (passwordInput.equals("Caput Draconis")) {
+        // System.out.println("Welcome back, Boss!");
+        // }else {
+        // System.out.println("Get the fuck out of here!!");
+        // }
+
+        // System.out.println("Is the number within the range 5-10: ");
+        // int number = 7;
+
+        // if (number >= 5 && number <= 10) {
+        //     System.out.println("It is! :)");
+        // } else {
+        //     System.out.println("It is not :(");
+        // }
+
+        // System.out.println("How old are you?");
+        // int agePrompt = Integer.valueOf(scanner.nextLine());
+
+        // if (agePrompt >= 0 && agePrompt <= 120) {
+        //     System.out.println("OK!");
+        // } else {
+        //     System.out.println("Impossible!");
+        // }
+
+        System.out.println("Give a year:");
+        int yearPrompt = Integer.valueOf(scanner.nextLine());
+
+        if (yearPrompt % 4 == 0 && (yearPrompt % 100 != 0 || yearPrompt % 400 == 0)) {
+            System.out.println("The year is a LEAP year.");
+        } else {
+            System.out.println("The year is not a leap year.");
         }
+        
     }
 }
