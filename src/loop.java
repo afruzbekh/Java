@@ -536,23 +536,163 @@ public class loop {
         // }
 
         // while (true) {
-        //     System.out.println("Input a number, 0 to quit");
-        //     int command = Integer.valueOf(scanner.nextLine());
-        //     if (command == 0) {
-        //         break;
-        //     }
+        // System.out.println("Input a number, 0 to quit");
+        // int command = Integer.valueOf(scanner.nextLine());
+        // if (command == 0) {
+        // break;
+        // }
 
-        //     System.out.println("You input " + command);
+        // System.out.println("You input " + command);
         // }
 
         // System.out.println("Done, thank you!");
 
+        // while (true) {
+        // System.out.println("Give a number");
+        // int num = Integer.valueOf(scanner.nextLine());
+        // if (num == 4) {
+        // break;
+        // }
+        // }
+
+        // while (true) {
+        // System.out.println("Insert positive integers");
+        // int number = Integer.valueOf(scanner.nextLine());
+
+        // if (number <= 0) {
+        // System.out.println("Unfit number! Try again.");
+        // continue;
+        // }
+
+        // System.out.println("Your input was " + number);
+        // }
+
+        // while (true) {
+        // System.out.println("Input positive numbers.");
+        // int number = Integer.valueOf(scanner.nextLine());
+
+        // if (number == 0) {
+        // break;
+        // }
+
+        // if (number < 0) {
+        // System.out.println("Unfit number! Try again.");
+        // continue;
+        // }
+
+        // System.out.println("Your input was " + number);
+        // }
+
+        // int number = 0;
+
+        // while (true) {
+        // number = number + 1;
+
+        // if (number >= 5) {
+        // break;
+        // }
+
+        // if (number < 5) {
+        // continue;
+        // }
+
+        // System.out.print(number + " ");
+        // }
+
+        // System.out.print(number + " ");
+
+        // while (true) {
+
+        // System.out.println("Give a number:");
+        // int numberPrompt = Integer.valueOf(scanner.nextLine());
+
+        // if (numberPrompt < 0) {
+        // System.out.println("Unsuitable number");
+        // continue;
+        // } else if (numberPrompt == 0) {
+        // break;
+        // } else {
+        // System.out.println(numberPrompt * numberPrompt);
+        // }
+
+        // }
+
+        // int count = 0;
+
+        // while (count < 5) {
+        // System.out.println("nigaaaaaaaaaaa");
+        // count++;
+        // }
+
+        // The task is to keep track of number ones
+        // int ones = 0;
+
+        // The task is to read an input from the user
+        // while (true) {
+        // System.out.println("Give a number (end with 0): ");
+        // // The task is to read a user inputted number
+        // int number = Integer.valueOf(scanner.nextLine());
+
+        // // The task is to exit the loop if the user
+        // // has inputted zero
+        // if (number == 0) {
+        // break;
+        // }
+
+        // // The task is to increase the amount of ones
+        // // if the user inputs a number one
+        // if (number == 1) {
+        // ones = ones + 1;
+        // }
+        // }
+
+        // // The task is to print out the total of ones
+        // System.out.println("The total of ones: " + ones);
+
+        // int numberCounter = 0;
+        // while (true) {
+        // System.out.println("Give a number (end with 0): ");
+        // int number = Integer.valueOf(scanner.nextLine());
+
+        // if (number == 0) {
+        // break;
+        // }
+
+        // numberCounter++;
+        // }
+
+        // System.out.println("Number of numbers: " + numberCounter);
+
+        // int numberCounter = 0;
+        // while (true) {
+        // System.out.println("Give a number (end with 0): ");
+        // int number = Integer.valueOf(scanner.nextLine());
+
+        // if (number == 0) {
+        // break;
+        // }
+
+        // if (number < 0) {
+        // numberCounter++;
+        // }
+
+        // }
+
+        // System.out.println("Number of numbers: " + numberCounter);
+
+        int sum = 0;
+
         while (true) {
-            System.out.println("Give a number");
-            int num = Integer.valueOf(scanner.nextLine());
-            if (num == 4) {
-                break;
+            System.out.println("Enter a number (end with 0): ");
+            int number = Integer.valueOf(scanner.nextLine());
+
+            if (number == 0) {
+                break; // Exit loop if the number is 0
             }
+
+            sum += number; // Add the number to the sum
         }
+
+        System.out.println("Sum of the numbers: " + sum);
     }
 }
