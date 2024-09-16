@@ -810,11 +810,48 @@ public class MoreLoop {
         public static void main(String[] args) {
                 Scanner scanner = new Scanner(System.in);
 
-                int number = 1;
+                // int i = 0;
 
-                while (number < 6) {
-                        System.out.println(number);
-                        number++;
+                // while (i < 10) {
+                // System.out.println(i);
+                // i++;
+                // }
+
+                // for (int i = 0; i < 10; i++) {
+                // System.out.println(i);
+                // }
+
+                // int start = 3;
+                // int end = 7;
+                // for (int i = start; i < end; i++) {
+                // System.out.println(i);
+                // }
+
+                // System.out.println("Give a number: ");
+                // int orderingNumber = Integer.valueOf(scanner.nextLine());
+
+                // for (int i = 0; i <= orderingNumber; i++) {
+                // System.out.println(i);
+                // }
+
+                // System.out.println("Give a number: ");
+                // int orderingNumber = Integer.valueOf(scanner.nextLine());
+
+                // for (int i = orderingNumber; i <= 100; i++) {
+                // System.out.println(i);
+                // }
+
+                System.out.println("Where to? ");
+                int whereTo = Integer.valueOf(scanner.nextLine());
+                System.out.println("Where from? ");
+                int wherefrom = Integer.valueOf(scanner.nextLine());
+
+                for (int i = wherefrom; i <= whereTo; i++) {
+                        if (whereTo > wherefrom) {
+                                System.out.println(i);
+                        } else {
+                                System.out.println();
+                        }
                 }
         }
 }
