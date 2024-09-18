@@ -239,9 +239,9 @@
 // import java.util.Scanner;
 
 // public class Conditional_Statements {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
-//         Scanner reader = new Scanner(System.in);
+// public static void main(String[] args) {
+// Scanner scanner = new Scanner(System.in);
+// Scanner reader = new Scanner(System.in);
 
 // System.out.println("wassup niggas");
 // if (true) {
@@ -396,37 +396,37 @@
 // System.out.println("The year is not a leap year.");
 // }
 
-//         System.out.println("-------- Value of the gift? ---------");
-//         double giftValue = scanner.nextDouble();
-//         double tax;
+// System.out.println("-------- Value of the gift? ---------");
+// double giftValue = scanner.nextDouble();
+// double tax;
 
-//         if (giftValue < 5000) {
-//             System.out.println("No tax!");
-//         } else if (giftValue <= 25000) {
-//             tax = 100 + (giftValue - 5000) * 0.08;
-//             System.out.println("Tax: " + tax);
-//         } else if (giftValue <= 55000) {
-//             tax = 1700 + (giftValue - 25000) * 0.10;
-//             System.out.println("Tax: " + tax);
-//         } else if (giftValue <= 200000) {
-//             tax = 4700 + (giftValue - 55000) * 0.12;
-//             System.out.println("Tax: " + tax);
-//         } else if (giftValue <= 1000000) {
-//             tax = 22100 + (giftValue - 200000) * 0.15;
-//             System.out.println("Tax: " + tax);
-//         } else {
-//             tax = 142100 + (giftValue - 1000000) * 0.17;
-//             System.out.println("Tax: " + tax);
-//         }
+// if (giftValue < 5000) {
+// System.out.println("No tax!");
+// } else if (giftValue <= 25000) {
+// tax = 100 + (giftValue - 5000) * 0.08;
+// System.out.println("Tax: " + tax);
+// } else if (giftValue <= 55000) {
+// tax = 1700 + (giftValue - 25000) * 0.10;
+// System.out.println("Tax: " + tax);
+// } else if (giftValue <= 200000) {
+// tax = 4700 + (giftValue - 55000) * 0.12;
+// System.out.println("Tax: " + tax);
+// } else if (giftValue <= 1000000) {
+// tax = 22100 + (giftValue - 200000) * 0.15;
+// System.out.println("Tax: " + tax);
+// } else {
+// tax = 142100 + (giftValue - 1000000) * 0.17;
+// System.out.println("Tax: " + tax);
+// }
 
-//     }
+// }
 // }
 
 // import java.util.Scanner;
 
 // public class part2 {
-//     public static void main(String[] main) {
-//         Scanner scanner = new Scanner(System.in);
+// public static void main(String[] main) {
+// Scanner scanner = new Scanner(System.in);
 
 // int number = Integer.valueOf(scanner.nextLine());
 // int result = number * 2;
@@ -439,31 +439,31 @@
 // int number = 12;
 
 // if (number > 10) {
-//     System.out.print("Hello ");
+// System.out.print("Hello ");
 // } else if (number < 20) {
-//     System.out.print("world");
+// System.out.print("world");
 // } else {
-//     System.out.print("!");
+// System.out.print("!");
 // }
 
 // System.out.println("---------- Give a number: ---------");
 // int numPrompt = Integer.valueOf(scanner.nextLine());
 // if (numPrompt < 0) {
-//     System.out.println(numPrompt * (-1));
+// System.out.println(numPrompt * (-1));
 // } else {
-//     System.out.println(numPrompt);
+// System.out.println(numPrompt);
 // }
 
-//     }
+// }
 // }
 
 // import java.util.Scanner;
 
 // public class loop {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
+// public static void main(String[] args) {
+// Scanner scanner = new Scanner(System.in);
 
-//         Scanner reader = new Scanner(System.in);
+// Scanner reader = new Scanner(System.in);
 
 // int sum = 0;
 
@@ -779,79 +779,263 @@
 // int negativeNumbers = 0;
 
 // while (true) {
-//     System.out.println("Give a number: ");
-//     int numbers = Integer.valueOf(scanner.nextLine());
+// System.out.println("Give a number: ");
+// int numbers = Integer.valueOf(scanner.nextLine());
 
-//     if (numbers == 0) {
-//         break;
-//     }
+// if (numbers == 0) {
+// break;
+// }
 
-//     if (numbers > 0) {
-//         positiveNumbers++;  // Increment count of positive numbers
-//         numberSum += numbers;  // Add the number to the sum
-//     }
+// if (numbers > 0) {
+// positiveNumbers++; // Increment count of positive numbers
+// numberSum += numbers; // Add the number to the sum
+// }
 
-//     if (numbers < 0) {
-//         negativeNumbers++; 
-//     }
+// if (numbers < 0) {
+// negativeNumbers++;
+// }
 // }
 
 // if (positiveNumbers > 0) {
-//     System.out.println("Average of the positive numbers: " + (double) numberSum / positiveNumbers);
+// System.out.println("Average of the positive numbers: " + (double) numberSum /
+// positiveNumbers);
 // } else {
-//     System.out.println("Cannot calculate the average, no positive numbers were given.");
+// System.out.println("Cannot calculate the average, no positive numbers were
+// given.");
 // }
-//     }
 // }
+// }
+
+// import java.util.Scanner;
+
+// public class MoreLoop {
+// public static void main(String[] args) {
+// Scanner scanner = new Scanner(System.in);
+// Scanner reader = new Scanner(System.in);
+
+// int i = 0;
+
+// while (i < 10) {
+// System.out.println(i);
+// i++;
+// }
+
+// for (int i = 0; i < 10; i++) {
+// System.out.println(i);
+// }
+
+// int start = 3;
+// int end = 7;
+// for (int i = start; i < end; i++) {
+// System.out.println(i);
+// }
+
+// System.out.println("Give a number: ");
+// int orderingNumber = Integer.valueOf(scanner.nextLine());
+
+// for (int i = 0; i <= orderingNumber; i++) {
+// System.out.println(i);
+// }
+
+// System.out.println("Give a number: ");
+// int orderingNumber = Integer.valueOf(scanner.nextLine());
+
+// for (int i = orderingNumber; i <= 100; i++) {
+// System.out.println(i);
+// }
+
+// System.out.println("Where to? ");
+// int whereTo = Integer.valueOf(scanner.nextLine());
+// System.out.println("Where from? ");
+// int wherefrom = Integer.valueOf(scanner.nextLine());
+
+// for (int i = wherefrom; i <= whereTo; i++) {
+// if (whereTo > wherefrom) {
+// System.out.println(i);
+// } else {
+// System.out.println();
+// }
+// }
+
+// int number = 1;
+
+// while (number != 2) {
+// System.out.println(number);
+// number = 2;
+// System.out.println(number);
+// number = 1;
+// }
+
+// int result = 0;
+
+// int i = 0;
+// while (true) {
+// result += 1; // shorthand for result = result + 3
+// i++; // shorthand for i = i + 1
+
+// if (i == 4) {
+// break;
+// }
+// }
+
+// System.out.println(result);
+
+// System.out.println("Last number?");
+
+// int UserInput = Integer.valueOf(scanner.nextLine());
+
+// int sum = 0;
+
+// for (int i = 1; i <= UserInput; i++) {
+// sum += i;
+// }
+
+// System.out.println("The sum is: " + sum);
+
+// while (true) {
+// System.out.println("First number?");
+// int firstNumber = Integer.valueOf(scanner.nextLine());
+
+// System.out.println("Last number?");
+// int lastNumber = Integer.valueOf(scanner.nextLine());
+
+// int sum = 0;
+
+// for (int i = firstNumber; i <= lastNumber; i++) {
+
+// sum += i;
+
+// }
+
+// System.out.println("The sum is: " + sum);
+
+// System.out.println("Do you want to continue? (y/n)");
+// String proceed = scanner.nextLine();
+
+// if (proceed.equals("y")) {
+// continue;
+// } else {
+// break;
+// }
+// }
+
+// System.out.println("Give a number");
+// int factorialNumber = Integer.valueOf(scanner.nextLine());
+
+// int factorial = 1;
+
+// for (int i = 1; i <= factorialNumber; i++) {
+// factorial *= i;
+// }
+// System.out.println("Factorial of " + factorialNumber + " is " + factorial );
+
+// System.out.print("Write numbers, negative numbers are invalid: ");
+// int sum = 0;
+// int validNumbers = 0;
+// int invalidNumbers = 0;
+
+// while (true) {
+// int input = Integer.valueOf(reader.nextLine());
+
+// if (input == 0) {
+// System.out.println("Sum of valid numbers: " + sum);
+// System.out.println("Valid numbers: " + validNumbers);
+// System.out.println("Invalid numbers: " + invalidNumbers);
+// break;
+// }
+
+// if (input < 0) {
+// invalidNumbers++;
+// continue;
+// }
+
+// sum += input;
+// validNumbers++;
+// }
+
+// while (true) {
+// System.out.println("Give numbers:");
+// int num = Integer.valueOf(scanner.nextLine());
+
+// if (num == -1) {
+// System.out.println("Thx! Bye!");
+// break;
+// }
+// }
+
+// System.out.println("Give numbers:");
+// int sum = 0;
+// while (true) {
+// int num = Integer.valueOf(scanner.nextLine());
+
+// if (num == -1) {
+// System.out.println("Thx! Bye!");
+// break;
+// } else {
+// sum += num;
+// }
+
+// }
+
+// System.out.println("sum " + sum);
+
+// System.out.println("Give numbers:");
+// int sum = 0;
+// int count = 0;
+// int odd = 0;
+// int even = 0;
+// while (true) {
+// int num = Integer.valueOf(scanner.nextLine());
+
+// if (num == -1) {
+// System.out.println("Thx! Bye!");
+// break;
+// } else {
+// count++;
+// sum += num;
+// }
+
+// if (num % 2 == 0) {
+// even++;
+// }else {
+// odd++;
+// }
+
+// }
+// System.out.println("Sum: " + sum); // Print the sum
+// System.out.println("Number of entries: " + count); // Print the number of
+// entries
+
+// if (count > 0) {
+// double average = (double) sum / count; // Calculate average
+// System.out.println("Average: " + average); // Print the average
+// } else {
+// System.out.println("No numbers entered."); // Handle case where no numbers
+// were entered
+// }
+// System.out.println("Even: " + even);
+// System.out.println("Odd: " + odd);
+
+// }
+// }
+
 
 import java.util.Scanner;
 
-public class MoreLoop {
-        public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
+public class Method {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("How many times?");
+        int num = Integer.valueOf(scanner.nextLine());
 
-                // int i = 0;
-
-                // while (i < 10) {
-                // System.out.println(i);
-                // i++;
-                // }
-
-                // for (int i = 0; i < 10; i++) {
-                // System.out.println(i);
-                // }
-
-                // int start = 3;
-                // int end = 7;
-                // for (int i = start; i < end; i++) {
-                // System.out.println(i);
-                // }
-
-                // System.out.println("Give a number: ");
-                // int orderingNumber = Integer.valueOf(scanner.nextLine());
-
-                // for (int i = 0; i <= orderingNumber; i++) {
-                // System.out.println(i);
-                // }
-
-                // System.out.println("Give a number: ");
-                // int orderingNumber = Integer.valueOf(scanner.nextLine());
-
-                // for (int i = orderingNumber; i <= 100; i++) {
-                // System.out.println(i);
-                // }
-
-                System.out.println("Where to? ");
-                int whereTo = Integer.valueOf(scanner.nextLine());
-                System.out.println("Where from? ");
-                int wherefrom = Integer.valueOf(scanner.nextLine());
-
-                for (int i = wherefrom; i <= whereTo; i++) {
-                        if (whereTo > wherefrom) {
-                                System.out.println(i);
-                        } else {
-                                System.out.println();
-                        }
-                }
+        int count = 0;
+        while (count < num) {
+            printText();
+            count++;
         }
+    }
+    public static void printText() {
+        System.out.println("In a hole in the ground there lived a method");
+    }
 }
