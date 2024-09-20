@@ -1019,23 +1019,198 @@
 // }
 // }
 
+//         System.out.println("How many times?");
+//         int num = Integer.valueOf(scanner.nextLine());
 
-import java.util.Scanner;
+//         int count = 0;
 
-public class Method {
+//    printText();
+//             count++;
+//         }
+//     }
+//     public static void printText() {
+//         System.out.println("In a hole in the ground there lived a method");
+//     }
+// }
+
+// public class Main {
+
+//     // Method greet that takes an integer parameter numOfTimes
+//     public static void greet(int numOfTimes) {
+//         int i = 0;
+//         while (i < numOfTimes) {
+//             System.out.println("Greetings!");
+//             i++;
+//         }
+//     }
+
+//     // Main method
+//     public static void main(String[] args) {
+//         // Call greet method with different values
+//         greet(1);     // Prints "Greetings!" once
+//         System.out.println("");  // Prints an empty line
+//         greet(3);     // Prints "Greetings!" three times
+
+//         System.out.println("");  // Prints an empty line
+//         greet(1 + 2); // Prints "Greetings!" three times (1 + 2 = 3)
+//     }
+// }
+
+// public class Main {
+
+//     public static void printUntilNumber(int number) {
+//         int i = 1;
+//         while (i <= number) {
+//             System.out.println(i);
+//             i++;
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         printUntilNumber(5);
+
+//     }
+// }
+
+public class Main {
+
+    // public static void printUntilNumber(int number) {
+    // int i = number;
+    // while (i >= 1) {
+    // System.out.println(i);
+    // i--;
+    // }
+    // }
+
+    // public static void main(String[] args) {
+    // printUntilNumber(5);
+
+    // }
+
+    // public static void sum(int first, int second) {
+    // System.out.println("The sum of numbers " + first + " and " + second + " is "
+    // + (first + second));
+    // }
+
+    // public static void main(String[] args) {
+    // sum(3, 5);
+
+    // int number1 = 2;
+    // int number2 = 4;
+
+    // sum(number1, number2);
+    // }
+
+    // public static void division(int numerator, int denominator) {
+    // System.out.println("");
+    // System.out.println((float) numerator / denominator);
+    // }
+
+    // public static void main(String[] args) {
+    // division(3, 5);
+    // }
+
+    // public static void divisibleByThreeInRange(int beginning, int end) {
+    // for (int i = beginning; i <= end; i++) {
+    // if (i % 3 == 0) {
+    // System.out.println(i);
+    // }
+    // }
+    // }
+
+    // public static void main(String[] args) {
+    // divisibleByThreeInRange(2, 10);
+    // }
+
+    // public static void main(String[] args) {
+    // int min = 5;
+    // int max = 10;
+
+    // printNumbers(min, max);
+    // System.out.println();
+
+    // min = 8;
+
+    // printNumbers(min, max);
+    // }
+
+    // public static void printNumbers(int min, int max) {
+    // while (min < max) {
+    // System.out.println(min);
+    // min++;
+    // }
+    // }
+
+    // public static void main(String[] args) {
+    // int number = 1;
+    // System.out.println("The value of the variable 'number' in the main program: "
+    // + number);
+    // incrementByThree(number);
+    // System.out.println("The value of the variable 'number' in the main program: "
+    // + number);
+    // }
+
+    // public static void incrementByThree(int number) {
+    // System.out.println("The value of the method parameter 'number': " + number);
+    // number = number + 3;
+    // System.out.println("The value of the method parameter 'number': " + number);
+    // }
+
+    // public static void main(String[] args) {
+    // int number = 10;
+    // modifyNumber(number);
+    // System.out.println(number);
+    // }
+
+    // public static void modifyNumber(int number) {
+    // number = number - 4;
+    // }
+
+    // public static int alwaysReturnsTen() {
+    // return 10;
+    // }
+
+    // public static int numberUno() {
+    // return 1;
+    // }
+
+    // public static void main(String[] args) {
+    // System.out.println("The value returned by numberUno is: " + numberUno());
+    // }
+
+    // public static String word() {
+    //     return "wassup!";
+    // }
+
+    // public static void main(String[] args) {
+    //     System.out.println(word());        
+    // }
+
+    // public static double average(int number1, int number2, int number3) {
+    //     int sum = number1 + number2 + number3;
+    //     double avg = sum / 3.0;
+    
+    //     return avg;
+    // }
+
+    // public static void main(String[] args) {
+    //     System.out.println(average(2, 97, 0));
+    // }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int first = 5;
+        int second = 10;
         
-        System.out.println("How many times?");
-        int num = Integer.valueOf(scanner.nextLine());
-
-        int count = 0;
-        while (count < num) {
-            printText();
-            count++;
-        }
+        beginningToMiddle(first, second);
+    
+        System.out.println(first);
     }
-    public static void printText() {
-        System.out.println("In a hole in the ground there lived a method");
+    
+    public static void beginningToMiddle (int start, int end) {
+        int middle = (start + end)/2;
+        while (start < middle) {
+            System.out.println("step");
+            start++;
+        }
     }
 }
