@@ -1072,6 +1072,8 @@
 //     }
 // }
 
+import java.util.Scanner;
+
 public class Main {
 
     // public static void printUntilNumber(int number) {
@@ -1179,38 +1181,253 @@ public class Main {
     // }
 
     // public static String word() {
-    //     return "wassup!";
+    // return "wassup!";
     // }
 
     // public static void main(String[] args) {
-    //     System.out.println(word());        
+    // System.out.println(word());
     // }
 
     // public static double average(int number1, int number2, int number3) {
-    //     int sum = number1 + number2 + number3;
-    //     double avg = sum / 3.0;
-    
-    //     return avg;
+    // int sum = number1 + number2 + number3;
+    // double avg = sum / 3.0;
+
+    // return avg;
     // }
 
     // public static void main(String[] args) {
-    //     System.out.println(average(2, 97, 0));
+    // System.out.println(average(2, 97, 0));
     // }
 
-    public static void main(String[] args) {
-        int first = 5;
-        int second = 10;
-        
-        beginningToMiddle(first, second);
-    
-        System.out.println(first);
-    }
-    
-    public static void beginningToMiddle (int start, int end) {
-        int middle = (start + end)/2;
-        while (start < middle) {
-            System.out.println("step");
-            start++;
+    // public static void main(String[] args) {
+    // int first = 5;
+    // int second = 10;
+
+    // beginningToMiddle(first, second);
+
+    // System.out.println(first);
+    // }
+
+    // public static void beginningToMiddle(int start, int end) {
+    // int middle = (start + end) / 2;
+    // while (start < middle) {
+    // System.out.println("step");
+    // start++;
+    // }
+    // }
+    // public static double average(int number1, int number2, int number3) {
+    // int sum = number1 + number2 + number3; // Add numbers
+    // double avg = sum / 3.0; // Find average by dividing the sum by 3
+
+    // return avg; // Return the calculated average
+    // }
+
+    // public static void main(String[] args) {
+    // Scanner scanner = new Scanner(System.in);
+
+    // System.out.print("Enter the first number: ");
+    // int first = Integer.valueOf(scanner.nextLine());
+
+    // System.out.print("Enter the second number: ");
+    // int second = Integer.valueOf(scanner.nextLine());
+
+    // System.out.print("Enter the third number: ");
+    // int third = Integer.valueOf(scanner.nextLine());
+
+    // double averageResult = average(first, second, third);
+
+    // System.out.print("The average of the numbers: " + averageResult);
+    // }
+
+    // public static void main(String[] args) {
+    // int number = 3;
+    // modifyNumber(number);
+    // System.out.println(addAndReturn(number));
+    // }
+
+    // public static void modifyNumber(int number) {
+    // number = number + 2;
+    // }
+
+    // public static int addAndReturn(int number) {
+    // return number + 10;
+    // }
+
+    // public static int sum(int number1, int number2, int number3, int number4) {
+    // return (number1 + number2 + number3 + number4);
+    // }
+
+    // public static void main(String[] args) {
+    // int answer = sum(4, 3, 6, 1);
+    // System.out.println("Sum: " + answer);
+    // }
+
+    // public static int smallest(int number1, int number2) {
+    // // write your code here
+    // // do not print anything inside the method
+    // if (number1 < number2) {
+    // return number1;
+    // } else {
+    // return number2;
+    // }
+    // // there must be a return command at the end
+    // }
+
+    // public static void main(String[] args) {
+    // int answer = smallest(2, 7);
+    // System.out.println("Smallest: " + answer);
+    // }
+
+    // public static int greatest(int number1, int number2, int number3) {
+    // return Math.max(Math.max(number1, number2), number3);
+    // }
+
+    // public static void main(String[] args) {
+    // int answer = greatest(2, 7, 3);
+    // System.out.println("Greatest: " + answer);
+    // }
+
+    // public static int sum(int number1, int number2, int number3, int number4) {
+    // return (number1 + number2 + number3 + number4);
+    // }
+
+    // public static double average(int number1, int number2, int number3, int
+    // number4) {
+    // return ((double) sum(number1, number2, number3, number4)/4);
+    // }
+
+    // public static void main(String[] args) {
+    // double result = average(4, 3, 6, 1);
+    // System.out.println("Average: " + result);
+    // }
+
+    // public static void main(String[] args) {
+    // System.out.println("Hello world!");
+    // printNumber();
+    // System.out.println("Bye bye world!");
+    // }
+
+    // public static void printNumber() {
+    // System.out.println("Number");
+    // }
+
+    // public static void main(String[] args) {
+    // int beginning = 1;
+    // int end = 5;
+
+    // printStars(beginning, end);
+    // }
+
+    // public static void printStars(int beginning, int end) {
+    // while (beginning < end) {
+    // System.out.print("*");
+    // beginning++; // same as beginning = beginning + 1
+    // }
+    // }
+
+    // public static void main(String[] args) {
+    // start();
+    // }
+
+    // public static void start() {
+    // int first = 5;
+    // int second = 6;
+
+    // int sum = sum(first, second);
+
+    // System.out.println("Sum: " + sum);
+    // }
+
+    // public static int sum(int number1, int number2) {
+    // return number1 + number2;
+    // }
+
+    // public static void main(String[] args) {
+    // int max = 3; // You can change this value to any number
+    // multiplicationTable(max);
+    // }
+
+    // public static void multiplicationTable(int max) {
+    // int number = 1;
+
+    // while (number <= max) {
+    // printMultiplicationTableRow(number, max);
+    // number++;
+    // }
+    // }
+
+    // public static void printMultiplicationTableRow(int number, int coefficient) {
+    // int printable = number;
+    // while (printable <= number * coefficient) {
+    // System.out.print(" " + printable);
+    // printable += number;
+    // }
+
+    // System.out.println("");
+    // }
+
+    // public static void printStars(int number) {
+    // int start = 1;
+
+    // while (start <= number) {
+    // System.out.print("*");
+    // start++;
+    // }
+    // System.out.println();
+    // }
+
+    // public static void main(String[] args) {
+    // printStars(5);
+    // printStars(3);
+    // printStars(9);
+    // printStars(19);
+    // }
+
+    // public static void printStars(int number) {
+    //     int start = 1;
+
+    //     while (start <= number) {
+    //         System.out.print("*");
+    //         start++;
+    //     }
+    //     System.out.println();
+    // }
+
+    // public static void printRectangle(int width, int height) {
+    //     int currentHeight = 1;
+
+    //     while (currentHeight <= height) {
+    //         printStars(width);
+    //         currentHeight++;
+    //     }
+
+    // }
+
+    // public static void main(String[] args) {
+    //     printRectangle(17, 3);
+    // }
+
+    public static void printTriangle(int size) {
+        int startHeight = 1;
+
+        while (startHeight <= size) {
+            printStars(startHeight);
+            startHeight++;
         }
     }
+
+    public static void printStars(int number) {
+        int startPoint = 1;
+
+        while(startPoint <= number) {
+            System.out.print("*");
+            startPoint++;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        printTriangle(4);
+    }
+
 }
