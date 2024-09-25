@@ -1564,19 +1564,78 @@ public class Array {
 
         // System.out.println(wordList.get(1));
 
-        ArrayList<String> wordContainer = new ArrayList<>();
-        while (true) {
-            System.out.print("Give us names: ");
-            String userInput = scanner.nextLine();
+        // ArrayList<String> wordContainer = new ArrayList<>();
+        // while (true) {
+        // System.out.print("Give us names: ");
+        // String userInput = scanner.nextLine();
 
-            if (userInput.equals("")) {
-                System.out.println(wordContainer.get(2));
+        // if (userInput.equals("")) {
+        // System.out.println(wordContainer.get(2));
+        // break;
+        // } else {
+        // wordContainer.add(userInput);
+        // }
+
+        // }
+
+        // ArrayList<Integer> numberContainer = new ArrayList<>();
+        // while (true) {
+        // System.out.print("Give numbers: ");
+        // int userInput = Integer.valueOf(scanner.nextLine());
+
+        // if (userInput == 0) {
+        // System.out.println("The sum of 2nd and 3rd numbers are: " +
+        // (numberContainer.get(1) + numberContainer.get(2)));
+        // break;
+        // } else {
+        // numberContainer.add(userInput);
+        // }
+
+        // }
+
+        // ArrayList<String> wordList = new ArrayList<>();
+
+        // wordList.add("First");
+        // wordList.add("Second");
+
+        // System.out.println(wordList.get(2));
+
+        // ArrayList<String> teachers = new ArrayList<>();
+
+        // teachers.add("Simon");
+        // teachers.add("Samuel");
+        // teachers.add("Ann");
+        // teachers.add("Anna");
+
+        // System.out.println(teachers.get(0));
+        // System.out.println(teachers.get(1));
+        // System.out.println(teachers.get(2));
+        // System.out.println(teachers.get(3));
+
+        // ArrayList<String> list = new ArrayList<>();
+        // System.out.println("Number of values on the list: " + list.size());
+
+        // list.add("First");
+        // System.out.println("Number of values on the list: " + list.size());
+
+        // int values = list.size();
+
+        // list.add("Second");
+        // System.out.println("Number of values on the list: " + list.size());
+
+        // list.add("third");
+        // System.out.println("Number of values on the list: " + values);
+
+        ArrayList<String> userInput_Container = new ArrayList<>();
+
+        while (true) {
+            String userInput = scanner.nextLine();
+            if (userInput.trim().isEmpty()) {
+                System.out.println("In total: " + userInput_Container.size());
                 break;
             } else {
-                wordContainer.add(userInput);
+                userInput_Container.add(userInput);
             }
-
         }
-
     }
 }
