@@ -1626,16 +1626,157 @@ public class Array {
         // list.add("third");
         // System.out.println("Number of values on the list: " + values);
 
-        ArrayList<String> userInput_Container = new ArrayList<>();
+        // ArrayList<String> userInput_Container = new ArrayList<>();
+
+        // while (true) {
+        // String userInput = scanner.nextLine();
+        // if (userInput.trim().isEmpty()) {
+        // System.out.println("In total: " + userInput_Container.size());
+        // break;
+        // } else {
+        // userInput_Container.add(userInput);
+        // }
+        // }
+
+        // ArrayList<String> teachers = new ArrayList<>();
+
+        // teachers.add("Simon");
+        // teachers.add("Samuel");
+        // teachers.add("Ann");
+        // teachers.add("Anna");
+
+        // int index = 0;
+
+        // if (index < teachers.size()) {
+        // System.out.println(teachers.get(index)); // index = 0
+        // index = index + 1; // index = 1
+        // }
+
+        // if (index < teachers.size()) {
+        // System.out.println(teachers.get(index)); // index = 1
+        // index = index + 1; // index = 2
+        // }
+
+        // if (index < teachers.size()) {
+        // System.out.println(teachers.get(index)); // index = 2
+        // index = index + 1; // index = 3
+        // }
+
+        // if (index < teachers.size()) {
+        // System.out.println(teachers.get(index)); // index = 3
+        // index = index + 1; // index = 4
+        // }
+
+        // if (index < teachers.size()) {
+        // // this will not be executed since index = 4 and teachers.size() = 4
+        // System.out.println(teachers.get(index));
+        // index = index + 1;
+        // }
+
+        // ArrayList<String> teachers = new ArrayList<>();
+
+        // teachers.add("Simon");
+        // teachers.add("Samuel");
+        // teachers.add("Ann");
+        // teachers.add("Anna");
+
+        // for (int i = 0; i < teachers.size(); i++) {
+        // System.out.println(teachers.get(i));
+        // }
+
+        // ArrayList<Integer> numbers = new ArrayList<>();
+
+        // numbers.add(1);
+        // numbers.add(2);
+        // numbers.add(3);
+        // numbers.add(4);
+
+        // for (int i = 0; i < numbers.size(); i++) {
+        // int number = numbers.get(i);
+        // System.out.println(number);
+        // // alternatively: System.out.println(numbers.get(i));
+        // }
+
+        // ArrayList<Integer> numbers = new ArrayList<>();
+
+        // numbers.add(1);
+        // numbers.add(2);
+        // numbers.add(3);
+        // numbers.add(4);
+
+        // int index = numbers.size() - 1;
+        // while (index >= 0) {
+        // int number = numbers.get(index);
+        // System.out.println(number);
+        // index = index - 1;
+        // }
+
+        // ArrayList<String> userInputs = new ArrayList<>();
+
+        // while (true) {
+        // String stringName = scanner.nextLine();
+
+        // if (stringName.trim().isEmpty()) {
+        // System.out.println(userInputs.get(0));
+        // System.out.println(userInputs.get(userInputs.size() - 1));
+        // break;
+        // } else {
+        // userInputs.add(stringName);
+        // }
+        // }
+
+        // ArrayList<Integer> userInputs = new ArrayList<>();
+
+        // while (true) {
+        // int userNumber = Integer.valueOf(scanner.nextLine());
+
+        // if (userNumber == -1) {
+
+        // System.out.print("From where? ");
+        // int beginning = Integer.valueOf(scanner.nextLine());
+
+        // System.out.print("To where? ");
+        // int end = Integer.valueOf(scanner.nextLine());
+
+        // for (int i = beginning; i <= end; i++) {
+        // System.out.println(userInputs.get(i));
+        // }
+
+        // break;
+        // } else {
+        // userInputs.add(userNumber);
+        // }
+        // }
+
+        ArrayList<Integer> userInputs = new ArrayList<>();
 
         while (true) {
-            String userInput = scanner.nextLine();
-            if (userInput.trim().isEmpty()) {
-                System.out.println("In total: " + userInput_Container.size());
+            int userNumber = Integer.valueOf(scanner.nextLine());
+
+            if (userNumber == -1) {
+                // Check if the list is empty
+                if (userInputs.isEmpty()) {
+                    System.out.println("No numbers entered.");
+                    break;
+                }
+
+                // Initialize largest with the first element in the list
+                int largest = userInputs.get(0);
+
+                // Loop through the list to find the largest number
+                for (int i = 1; i < userInputs.size(); i++) {
+                    int number = userInputs.get(i);
+                    if (largest < number) {
+                        largest = number;
+                    }
+                }
+
+                System.out.println("The largest number: " + largest);
                 break;
             } else {
-                userInput_Container.add(userInput);
+                userInputs.add(userNumber);
             }
         }
+
     }
 }
