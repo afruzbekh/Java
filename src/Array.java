@@ -1748,35 +1748,86 @@ public class Array {
         // }
         // }
 
-        ArrayList<Integer> userInputs = new ArrayList<>();
+        // ArrayList<Integer> userInputs = new ArrayList<>();
+
+        // while (true) {
+        // int userNumber = Integer.valueOf(scanner.nextLine());
+
+        // if (userNumber == -1) {
+        // // Check if the list is empty
+        // if (userInputs.isEmpty()) {
+        // System.out.println("No numbers entered.");
+        // break;
+        // }
+
+        // // Initialize largest with the first element in the list
+        // int largest = userInputs.get(0);
+
+        // // Loop through the list to find the largest number
+        // for (int i = 1; i < userInputs.size(); i++) {
+        // int number = userInputs.get(i);
+        // if (largest < number) {
+        // largest = number;
+        // }
+        // }
+
+        // System.out.println("The largest number: " + largest);
+        // break;
+        // } else {
+        // userInputs.add(userNumber);
+        // }
+        // }
+
+        // ArrayList<Integer> numberContainer = new ArrayList<>();
+
+        // while (true) {
+        // int userInput = Integer.valueOf(scanner.nextLine());
+
+        // if (userInput == -1) {
+
+        // System.out.print("Search for? ");
+        // int indexFinder = Integer.valueOf(scanner.nextLine());
+
+        // for (int i = 0; i < numberContainer.size(); i++) {
+        // if (indexFinder == numberContainer.get(i)) {
+        // System.out.println(indexFinder + " is at index " + i);
+
+        // }
+        // }
+
+        // break;
+        // } else {
+        // numberContainer.add(userInput);
+        // }
+
+        // }
+
+        ArrayList<Integer> numberContainer = new ArrayList<>();
 
         while (true) {
-            int userNumber = Integer.valueOf(scanner.nextLine());
+            int userInput = Integer.valueOf(scanner.nextLine());
 
-            if (userNumber == -1) {
-                // Check if the list is empty
-                if (userInputs.isEmpty()) {
-                    System.out.println("No numbers entered.");
-                    break;
-                }
+            if (userInput == 9999) {
 
-                // Initialize largest with the first element in the list
-                int largest = userInputs.get(0);
+                int smallest = numberContainer.get(0);
 
-                // Loop through the list to find the largest number
-                for (int i = 1; i < userInputs.size(); i++) {
-                    int number = userInputs.get(i);
-                    if (largest < number) {
-                        largest = number;
+                for (int i = 1; i < numberContainer.size(); i++) {
+
+                    int number = numberContainer.get(i);
+
+                    if (smallest > number) {
+                        smallest = number;
                     }
                 }
-
-                System.out.println("The largest number: " + largest);
+                System.out.println("The smallest number: " + smallest);
+                System.out.println("Found at index: " + numberContainer.get(smallest));
                 break;
             } else {
-                userInputs.add(userNumber);
+                numberContainer.add(userInput);
             }
         }
+
+        scanner.close();
 
     }
 }
