@@ -1802,32 +1802,113 @@ public class Array {
 
         // }
 
-        ArrayList<Integer> numberContainer = new ArrayList<>();
+        // ArrayList<Integer> numberContainer = new ArrayList<>();
+
+        // while (true) {
+        // int userInput = Integer.valueOf(scanner.nextLine());
+
+        // if (userInput == 9999) {
+
+        // int smallest = numberContainer.get(0);
+        // int smallestIndex = 0;
+        // for (int i = 1; i < numberContainer.size(); i++) {
+
+        // int number = numberContainer.get(i);
+
+        // if (smallest > number) {
+        // smallest = number;
+        // smallestIndex = i;
+        // }
+        // }
+        // System.out.println("The smallest number: " + smallest);
+        // System.out.println("Found at index: " + smallestIndex);
+        // break;
+        // } else {
+        // numberContainer.add(userInput);
+        // }
+        // }
+
+        // ArrayList<String> teachers = new ArrayList<>();
+
+        // teachers.add("Simon");
+        // teachers.add("Samuel");
+        // teachers.add("Ann");
+        // teachers.add("Anna");
+
+        // for (String teacher : teachers) {
+        // System.out.println(teacher);
+        // }
+
+        // scanner.close();
+
+        // ArrayList<Integer> list = new ArrayList<>();
+
+        // while (true) {
+        // int userInput = scanner.nextInt();
+
+        // if (userInput == -1) {
+        // int sum = 0;
+        // for (int number : list) {
+        // sum += number;
+        // }
+        // double average = (double) sum / list.size();
+        // System.out.println("Average: " + average);
+        // break;
+        // } else {
+        // list.add(userInput);
+        // }
+
+        // }
+        // scanner.close();
+
+        // ArrayList<String> list = new ArrayList<>();
+
+        // list.add("First");
+        // list.add("Second");
+        // list.add("Third");
+
+        // list.remove(1);
+
+        // System.out.println("Index 0 so the first value: " + list.get(0));
+        // System.out.println("Index 1 so the second value: " + list.get(1));
+
+        // ArrayList<String> list = new ArrayList<>();
+
+        // list.add("First");
+        // list.add("Second");
+        // list.add("Third");
+
+        // System.out.println("Is the first found? " + list.contains("First"));
+
+        // boolean found = list.contains("Second");
+        // if (found) {
+        // System.out.println("Second was found");
+        // }
+
+        // // or more simply
+        // if (list.contains("Second")) {
+        // System.out.println("Second can still be found");
+        // }
+
+        ArrayList<String> list = new ArrayList<>();
 
         while (true) {
-            int userInput = Integer.valueOf(scanner.nextLine());
+            String userInput = scanner.nextLine();
 
-            if (userInput == 9999) {
+            if (userInput.trim().isEmpty()) {
+                System.out.print("Search for? ");
+                String stringFinder = scanner.nextLine();
 
-                int smallest = numberContainer.get(0);
-
-                for (int i = 1; i < numberContainer.size(); i++) {
-
-                    int number = numberContainer.get(i);
-
-                    if (smallest > number) {
-                        smallest = number;
-                    }
+                if (list.contains(stringFinder)) {
+                    System.out.println(stringFinder + " was found!");
+                } else {
+                    System.out.println(stringFinder + " was NOT found!");
                 }
-                System.out.println("The smallest number: " + smallest);
-                System.out.println("Found at index: " + numberContainer.get(smallest));
                 break;
             } else {
-                numberContainer.add(userInput);
+                list.add(userInput);
             }
         }
-
         scanner.close();
-
     }
 }
