@@ -1543,11 +1543,13 @@
 // }
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+    }
 
         // ArrayList<Integer> integers = new ArrayList<>();
         // int integer = 1;
@@ -1890,25 +1892,39 @@ public class Array {
         // System.out.println("Second can still be found");
         // }
 
-        ArrayList<String> list = new ArrayList<>();
+        // ArrayList<String> list = new ArrayList<>();
 
-        while (true) {
-            String userInput = scanner.nextLine();
+        // while (true) {
+        //     String userInput = scanner.nextLine();
 
-            if (userInput.trim().isEmpty()) {
-                System.out.print("Search for? ");
-                String stringFinder = scanner.nextLine();
+        //     if (userInput.trim().isEmpty()) {
+        //         System.out.print("Search for? ");
+        //         String stringFinder = scanner.nextLine();
 
-                if (list.contains(stringFinder)) {
-                    System.out.println(stringFinder + " was found!");
-                } else {
-                    System.out.println(stringFinder + " was NOT found!");
-                }
-                break;
-            } else {
-                list.add(userInput);
+        //         if (list.contains(stringFinder)) {
+        //             System.out.println(stringFinder + " was found!");
+        //         } else {
+        //             System.out.println(stringFinder + " was NOT found!");
+        //         }
+        //         break;
+        //     } else {
+        //         list.add(userInput);
+        //     }
+        // }
+        // scanner.close();
+
+        public static void print(List<String> list) {
+            for (String value: list) {
+                System.out.println(value);
             }
         }
-        scanner.close();
+        
+        ArrayList<String> strings = new ArrayList<>();
+
+strings.add("First");
+strings.add("Second");
+strings.add("Third");
+
+print(strings);
     }
-}
+
